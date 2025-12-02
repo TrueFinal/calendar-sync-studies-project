@@ -48,16 +48,13 @@ See full details in `ARCHITECTURE.md`
 
 <div align="center">
 
-  <!-- Container -->
-  <div style="max-width: 900px; margin: auto;">
+  <!-- Optional Title -->
+  <h3>High-Level Folder Structure</h3>
 
-    <!-- Título opcional -->
-    <h3>High level folder structure</h3>
-
-    <!-- Imagem 1 -->
-    <img src="docs\diagrams\folder_structure.drawio.png" alt="Backend Architecture" width="80%" style="border-radius: 8px; margin-bottom: 20px;" />
-
-  </div>
+  <img src="docs/diagrams/folder_structure.drawio.png"
+       alt="Folder Structure Diagram"
+       width="80%"
+       style="border-radius: 8px; margin-top: 10px;" />
 
 </div>
 
