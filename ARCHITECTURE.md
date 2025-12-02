@@ -19,38 +19,31 @@ The goal is to provide a clear, scalable, and maintainable structure, using only
 
 # 🏛️ High-Level Architecture
 
-                          +---------------------------+
-                          |    Google Calendar API    |
-                          +-------------+-------------+
-                                        |
-                                 OAuth2 / REST
-                                        |
-                               +--------v--------+
-                               |   Backend API   |
-                               |    (FastAPI)    |
-                               +--------+--------+
-                                        |
-        +-------------------------------+------------------------------+
-        |               |                        |                     |
-        |               |                        |                     |
- +------v------+  +-----v-------+        +-------v-------+     +-------v-------+
- |  Database   |  |    Redis    |        |    Workers    |     |     Nginx     |
- | PostgreSQL  |  |   Caching   |        |  Async Jobs   |     | Reverse Proxy |
- +-------------+  +-------------+        +---------------+     +---------------+
+<div align="center">
+
+  <h3>High-Level System Architecture</h3>
+
+  <img src="docs/diagrams/high_level_architecture.drawio.png"
+       alt="System Architecture Diagram"
+       width="80%"
+       style="border-radius: 8px; margin-top: 10px;" />
+
+</div>
 
 ---
 
 # 🧱 Folder Structure
 
-src/
-├── api/ # Routes, controllers
-├── core/ # Config, settings, security, logging
-├── modules/ # Domain modules (calendar, users, sync)
-├── workers/ # Background tasks
-├── infra/ # DB, redis, http clients
-├── utils/ # Helpers, shared utilities
-tests/ # Test suite
-docs/ # Documentation
+<div align="center">
+
+  <h3>Folder Structure</h3>
+
+  <img src="docs/diagrams/folder_structure.drawio.png"
+       alt="Folder Structure Diagram"
+       width="80%"
+       style="border-radius: 8px; margin-top: 10px;" />
+
+</div>
 
 ---
 
