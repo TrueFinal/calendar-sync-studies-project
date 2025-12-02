@@ -23,7 +23,7 @@ The goal is to provide a clear, scalable, and maintainable structure, using only
 
   <h3>High-Level System Architecture</h3>
 
-  <img src="docs/diagrams/system_architecture.drawio.png"
+  <img src="docs/diagrams/high_level_architecture.drawio.png"
        alt="System Architecture Diagram"
        width="80%"
        style="border-radius: 8px; margin-top: 10px;" />
@@ -36,7 +36,6 @@ The goal is to provide a clear, scalable, and maintainable structure, using only
 
 <div align="center">
 
-  <!-- Optional Title -->
   <h3>Folder Structure</h3>
 
   <img src="docs/diagrams/folder_structure.drawio.png"
