@@ -19,24 +19,21 @@ The goal is to provide a clear, scalable, and maintainable structure, using only
 
 # 🏛️ High-Level Architecture
 
-                          +---------------------------+
-                          |    Google Calendar API    |
-                          +-------------+-------------+
-                                        |
-                                 OAuth2 / REST
-                                        |
-                               +--------v--------+
-                               |   Backend API   |
-                               |    (FastAPI)    |
-                               +--------+--------+
-                                        |
-        +-------------------------------+------------------------------+
-        |               |                        |                     |
-        |               |                        |                     |
- +------v------+  +-----v-------+        +-------v-------+     +-------v-------+
- |  Database   |  |    Redis    |        |    Workers    |     |     Nginx     |
- | PostgreSQL  |  |   Caching   |        |  Async Jobs   |     | Reverse Proxy |
- +-------------+  +-------------+        +---------------+     +---------------+
+<div align="center">
+
+  <!-- Container -->
+  <div style="max-width: 900px; margin: auto;">
+
+    <!-- Título opcional -->
+    <h3>High Level Architecture Diagram</h3>
+
+    <!-- Imagem 1 -->
+    <img src="docs\diagrams\high_level_architecture.drawio.png" alt="Backend Architecture" width="80%" style="border-radius: 8px; margin-bottom: 20px;" />
+
+  </div>
+
+</div>
+
 
 ---
 

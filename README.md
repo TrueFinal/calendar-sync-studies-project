@@ -46,32 +46,20 @@ The backend is primarily built in Python and follows clean architecture principl
 
 See full details in `ARCHITECTURE.md`
 
-/project-root
- ├── src/
- │   ├── api/                    # Routes, controllers, REST endpoints
- │   ├── core/                   # Settings, config, security, logging
- │   ├── modules/                # Business logic (calendar, users, sync)
- │   ├── workers/                # Background workers / async jobs
- │   ├── infra/                  # Database, redis, external clients
- │   └── utils/                  # Shared helpers and utilities
- │
- ├── tests/                      # Automated test suite
- ├── docs/                       # Additional documentation (diagrams, notes)
- │
- ├── .github/
- │   ├── ISSUE_TEMPLATE/
- │   │   ├── bug_report.md
- │   │   ├── feature_request.md
- │   │   └── documentation_request.md
- │   └── PULL_REQUEST_TEMPLATE.md
- │
- ├── README.md
- ├── CONTRIBUTING.md
- ├── CODE_OF_CONDUCT.md
- ├── ARCHITECTURE.md            
- ├── BRANCH_PROTECTION.md        
- ├── CODEOWNERS
- └── LICENSE
+<div align="center">
+
+  <!-- Container -->
+  <div style="max-width: 900px; margin: auto;">
+
+    <!-- Título opcional -->
+    <h3>High level folder structure</h3>
+
+    <!-- Imagem 1 -->
+    <img src="docs\diagrams\folder_structure.drawio.png" alt="Backend Architecture" width="80%" style="border-radius: 8px; margin-bottom: 20px;" />
+
+  </div>
+
+</div>
 
 ---
 
