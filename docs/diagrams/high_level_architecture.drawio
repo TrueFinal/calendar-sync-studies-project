@@ -1,0 +1,68 @@
+<mxfile host="app.diagrams.net" modified="2025-12-02T05:00:00.000Z" agent="Mozilla/5.0" version="20.6.0" type="device">
+  <diagram id="HLA" name="High-Level Architecture">
+    <mxGraphModel dx="1424" dy="821" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" background="#ffffff">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Google Calendar API -->
+        <mxCell id="google_api" value="Google Calendar API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="400" y="40" width="240" height="70" as="geometry"/>
+        </mxCell>
+
+        <!-- Backend API -->
+        <mxCell id="backend" value="Backend API (FastAPI)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="390" y="180" width="260" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Edge: Google → Backend -->
+        <mxCell id="edge_google_backend" edge="1" parent="1" source="google_api" target="backend"
+                style="endArrow=block;html=1;strokeColor=#000000;strokeWidth=1;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- PostgreSQL -->
+        <mxCell id="db" value="PostgreSQL Database" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="120" y="350" width="180" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- Redis -->
+        <mxCell id="redis" value="Redis Cache" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="380" y="350" width="180" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Workers -->
+        <mxCell id="workers" value="Background Workers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fdeada;strokeColor=#c2792b;" vertex="1" parent="1">
+          <mxGeometry x="600" y="350" width="200" height="90" as="geometry"/>
+        </mxCell>
+
+        <!-- Nginx -->
+        <mxCell id="nginx" value="Nginx Reverse Proxy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="390" y="520" width="260" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Edges to Backend -->
+        <mxCell id="edge_backend_db" edge="1" parent="1" source="backend" target="db"
+                style="endArrow=block;html=1;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge_backend_redis" edge="1" parent="1" source="backend" target="redis"
+                style="endArrow=block;html=1;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge_backend_workers" edge="1" parent="1" source="backend" target="workers"
+                style="endArrow=block;html=1;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge_nginx_backend" edge="1" parent="1" source="nginx" target="backend"
+                style="endArrow=block;html=1;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

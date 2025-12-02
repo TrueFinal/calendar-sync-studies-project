@@ -1,0 +1,139 @@
+<mxfile host="app.diagrams.net" modified="2025-12-02T05:50:00.000Z" agent="Mozilla/5.0" version="20.6.0" type="device">
+  <diagram id="folder-structure" name="Folder Structure">
+    <mxGraphModel dx="1424" dy="821" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" background="#ffffff">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- ROOT -->
+        <mxCell id="root" value="/project-root" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="40" width="220" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- src/ -->
+        <mxCell id="src" value="src/" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="140" y="150" width="180" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- docs/ -->
+        <mxCell id="docs" value="docs/" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="420" y="150" width="180" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- .github/ -->
+        <mxCell id="github" value=".github/" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="700" y="150" width="180" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- Root files -->
+        <mxCell id="rootfiles" value="README.md&#xa;CONTRIBUTING.md&#xa;CODE_OF_CONDUCT.md&#xa;ARCHITECTURE.md&#xa;BRANCH_PROTECTION.md&#xa;CODEOWNERS&#xa;LICENSE" 
+                style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="150" width="240" height="180" as="geometry"/>
+        </mxCell>
+
+        <!-- Edges -->
+        <mxCell id="edge_root_src" edge="1" source="root" target="src" parent="1" style="endArrow=block;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge_root_docs" edge="1" source="root" target="docs" parent="1" style="endArrow=block;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge_root_github" edge="1" source="root" target="github" parent="1" style="endArrow=block;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge_root_files" edge="1" source="root" target="rootfiles" parent="1" style="endArrow=block;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Folders under src/ -->
+
+        <mxCell id="src-api" value="api/&#xa;→ Rotas, controllers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="80" y="250" width="180" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="src-core" value="core/&#xa;→ Config, env, security, logging" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="260" y="250" width="220" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="src-modules" value="modules/&#xa;→ Calendar, sync, users" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="80" y="350" width="200" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="src-workers" value="workers/&#xa;→ Background jobs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="300" y="350" width="200" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="src-infra" value="infra/&#xa;→ DB, Redis, external clients" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="80" y="450" width="210" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="src-utils" value="utils/&#xa;→ Helpers, shared functions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="300" y="450" width="200" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="src-tests" value="tests/&#xa;→ Automated test suite" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="180" y="550" width="200" height="70" as="geometry"/>
+        </mxCell>
+
+        <!-- Edges under src -->
+        <mxCell id="edge_src_api" edge="1" source="src" target="src-api" parent="1" style="endArrow=block;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge_src_core" edge="1" source="src" target="src-core" parent="1" style="endArrow=block;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge_src_modules" edge="1" source="src" target="src-modules" parent="1" style="endArrow=block;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge_src_workers" edge="1" source="src" target="src-workers" parent="1" style="endArrow=block;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge_src_infra" edge="1" source="src" target="src-infra" parent="1" style="endArrow=block;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge_src_utils" edge="1" source="src" target="src-utils" parent="1" style="endArrow=block;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge_src_tests" edge="1" source="src" target="src-tests" parent="1" style="endArrow=block;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- docs/ subfolders -->
+        <mxCell id="docs-diagrams" value="diagrams/&#xa;→ .drawio files" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f7f2e7;strokeColor=#c89f65;" vertex="1" parent="1">
+          <mxGeometry x="420" y="250" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge_docs_diagrams" edge="1" source="docs" target="docs-diagrams" parent="1" style="endArrow=block;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- .github/ subfolders -->
+        <mxCell id="github-issue-templates" value="ISSUE_TEMPLATE/&#xa;→ bug, feature, docs templates" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3dcdc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="700" y="250" width="230" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="github-pr-template" value="PULL_REQUEST_TEMPLATE.md" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3dcdc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="700" y="340" width="230" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge_github_issue" edge="1" source="github" target="github-issue-templates" parent="1" style="endArrow=block;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="edge_github_pr" edge="1" source="github" target="github-pr-template" parent="1" style="endArrow=block;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
