@@ -6,7 +6,7 @@ The backend is primarily built in Python and follows clean architecture principl
 
 ---
 
-## 🚀 Project Goals
+## Project Goals
 
 - Provide a secure backend to integrate with Google Calendar (OAuth2 + API)
 - Create a modular and maintainable Python application
@@ -16,7 +16,7 @@ The backend is primarily built in Python and follows clean architecture principl
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Python 3.12**
 - **FastAPI** (backend API)
@@ -30,7 +30,7 @@ The backend is primarily built in Python and follows clean architecture principl
 
 ---
 
-## 📚 Core Features (Planned)
+## Core Features (Planned)
 
 - Google OAuth2 authentication & token management  
 - Event synchronization engine (pull & push)
@@ -42,7 +42,7 @@ The backend is primarily built in Python and follows clean architecture principl
 
 ---
 
-## 🧱 Project Structure Overview
+## Project Structure Overview
 
 See full details in `ARCHITECTURE.md`
 
@@ -60,19 +60,19 @@ See full details in `ARCHITECTURE.md`
 
 ---
 
-## 🧰 How to Contribute
+## How to Contribute
 
 See: `CONTRIBUTING.md`
 
 ---
 
-## 🔒 Code of Conduct
+## Code of Conduct
 
 See: `CODE_OF_CONDUCT.md`
 
 ---
 
-## 👤 Maintainer
+## Maintainer
 
 **Murillo Gabriel**  
 Contact: *murillogyn2023@gmail.com*
